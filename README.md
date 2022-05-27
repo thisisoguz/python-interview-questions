@@ -8,7 +8,7 @@ Any design patterns etc. aren't taken into account answering them since they are
 
 There are two boundaries of age which are 20 and 40 and the ages that fall in such intervals will be named underaged, age, and boomer respectively.
 
-Input method will be called if the input is wanted to be given by keyboard.
+Input method will be called if the input is wanted to be given by the keyboard.
 
 ```
 age = int(input("Please specify an age: "))
@@ -33,7 +33,6 @@ Interval here will be specified using the values given by the keyboard.
 
 ```
 ending_num = int(input("Give the end of the interval: "))
-
 ```
 
 While looping through, the counter has to sum up the odd and even numbers each other thoroughly.
@@ -74,7 +73,6 @@ Beginning and ending of the interval are decided using the values given by the k
 
 ```
 a = int(input("You have 5 chances to guess the number.\nBeginning number is "))
-
 b = int(input("Ending number is "))
 ```
 
@@ -88,13 +86,13 @@ Closing parts of the ranges in Python are excluded by default. So, you have to t
 random_number = random.randint(a,b+1)
 ```
 
-Attemps left want to be given to the screen, so, the guesser will be more careful while guessing. The attemp will be counted in the for loop.
+The attemps left will be prompted to the screen, so, the guesser will be more careful while guessing. The attemp will be counted in the for loop.
 
 ```
 attempt = 0
 ```
 
-Imagine that the guesser has 5 attempts to win the game. The attempt will be incremented by 1 everytime the guesser tries to guess the number. Then, by extracting it from the total amount of guess, that can be defined in the range of the for loop, the attemps will be calculated. It can be defined using a for loop as following:
+Imagine that the guesser has 5 attempts to win the game. The attempt will be incremented by 1 everytime the guesser tries to guess the number. Then, by extracting it from the total amount of guess, that can be defined in the range of the for loop, the attemps left will be calculated. It can be defined using a for loop as following:
 
 ```
 for i in range(1,6):
@@ -116,5 +114,4 @@ for i in range(1,6):
     else:
         print("You guessed the number.")
         break
-
 ```
