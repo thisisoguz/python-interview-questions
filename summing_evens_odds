@@ -1,0 +1,15 @@
+ending_num = int(input("Give the end of the interval: "))
+
+sum_even = 0
+sum_odd = 0
+
+for i in range(1, ending_num + 1):
+    if (i%2 == 0):
+        sum_even = sum_even + i
+    else:
+        sum_odd = sum_odd + i
+
+print("Sum of the evens is ", sum_even)
+print("Mean of the sum of the evens is", sum_even/2)
+print("Sum of the odds is ", sum_odd)
+print("Mean of the sum of the odds is", sum_odd/2)
